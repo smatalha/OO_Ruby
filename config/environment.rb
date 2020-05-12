@@ -1,0 +1,5 @@
+require 'pry'
+require_relative '../app/models/traveler.rb'
+require_relative '../app/models/category.rb'
+require_relative '../app/models/destination.rb'
+require_relative '../app/models/bucket_list.rb'

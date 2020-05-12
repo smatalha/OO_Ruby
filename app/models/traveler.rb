@@ -1,7 +1,9 @@
 class Traveler
 
     attr_reader :name, :address
+    attr_accessor 
     
+
     @@all = []
     def initialize(name, address)
         @name = name
@@ -12,5 +14,6 @@ class Traveler
     def self.all
         @@all
     end
+    
 
 end
