@@ -30,5 +30,15 @@ class Destination
         bucket_lists.map { |b| b.traveler}
     end
 
+    
+    def create_option(name, amenity)
+        Option.new(name, self, amenity)
+    end
+
+    def amenities
+        Destination.all.select do |amenity|
+            amenity.name == self
+        end
+    end
 
 end

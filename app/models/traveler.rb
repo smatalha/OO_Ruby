@@ -31,8 +31,5 @@ class Traveler
         bucket_lists.map { |b| b.destination}
     end
 
-    def create_bucketlist(name, destination, content)
-        BucketList.new(name, self, destination, content)
-    end
  
 end 
