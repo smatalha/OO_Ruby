@@ -15,7 +15,6 @@ class Traveler
         @@all
     end
 
-
     def categories
         self.all.select { |b| b.traveler == self}
     end
@@ -32,4 +31,8 @@ class Traveler
         bucket_lists.map { |b| b.destination}
     end
 
-end
+    def create_bucketlist(name, destination, content)
+        BucketList.new(name, self, destination, content)
+    end
+ 
+end 
