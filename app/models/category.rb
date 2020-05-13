@@ -21,14 +21,6 @@ class Category
         Destination.all.select { |b| b.category == self}
     end
 
-    # def bucket_lists
-    #     BucketList.map { |d| d.bucket_list}
-    # end
-
-    # def travelers
-    #     bucket_lists.map { |b| b.traveler }
-    # end
-
     def destinations_price
         destinations.map { |d| d.price}
     end

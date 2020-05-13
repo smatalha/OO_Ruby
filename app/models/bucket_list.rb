@@ -32,17 +32,7 @@ class BucketList
         self.destinations.map { |d| d.category}
     end
 
-    # def 
-    #     BucketList.all.select { |d| d.bucket_list == self}
-    # end
-
-    # def categories
-    #     destinations.map { |d| d.category}
-    # end
-
-    # def destinations_name
-    #     destinations.map { |d| d.name}
-    # end
+ 
 
 
 end
